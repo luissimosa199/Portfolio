@@ -1,0 +1,130 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  transition: transform 300ms ease-in-out;
+
+  overflow: hidden;
+}
+
+@keyframes twist {
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.card:hover {
+  animation: twist 300ms;
+}
+
+.bow {
+  background-color: var(--pri-color);
+  height: 50px;
+  margin-top: 1em;
+  position: absolute;
+  width: 100%;
+
+  text-align: center;
+  line-height: 50px;
+  font-weight: 700;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Merriweather, serif;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Bakbak One', cursive;
+  letter-spacing: 2px;;
+}
+
+.bow:after {
+  position: absolute;
+  content: "";
+  background-color: var(--pri-color);
+  width: 11px;
+  height: 60px;
+  left: -11px;
+  border-radius: 50vw 0vw 0vw 0vw;
+}
+
+.bow:before {
+  position: absolute;
+  content: "";
+  background-color: var(--pri-darker-color);
+  width: 11px;
+  height: 20px;
+  left: -11px;
+  bottom: -20px;
+  border-radius: 50vw 0vw 0vw 50vw;
+  z-index: 2;
+}
+
+.textcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1em;
+  gap: 2em;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+}
+
+.textcontainer > * {
+  margin: 0;
+}
+
+.card_img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.card_link_cont {
+  display: flex;
+  width: 100%;
+}
+
+.card_link {
+  padding: 1em 1em;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  transition: 200ms;
+}
+
+.card_link:hover {
+  background-color: darkblue;
+}
+
+/* SKELETON */
+
+.shade {
+  position: absolute;
+  top: -500px;
+  background-color: lightgrey;
+  height: 300%;
+  width: 15%;
+  transform: rotateZ(25deg);
+  animation: glide 1.5s infinite;
+}
+
+@keyframes glide {
+  100% {
+      top: 500px;
+    }
+  }

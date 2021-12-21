@@ -1,0 +1,36 @@
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact_imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(1em + 10vw);
+}
+
+.contact_imgs_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_imgs_cont p {
+    text-align: center;
+    width: 12ch;
+}
+
+@keyframes twist {
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .contact_svg:hover {
+    animation: twist 300ms;
+  }

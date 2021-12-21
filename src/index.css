@@ -1,0 +1,47 @@
+*::after, *::before, * {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Open+Sans:wght@300&display=swap');
+
+/* font-family: 'Bakbak One', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+:root {
+  --pri-color: blue;
+  --pri-darker-color: darkblue;
+  --sec-color: #eeeeee;
+}
+
+body {
+  margin: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, a {
+  font-family: 'Bakbak One', cursive;
+  letter-spacing: 1px;;
+}
+
+a {
+  color: var(--pri-color);
+}
+
+a:visited {
+  color: black;
+  font-weight: 300;
+}
+
+.para {
+  font-size: 1.2em;
+}
+
+main {
+  padding: 0em 1.5em;
+}
+
+section {
+  min-height: 100vh;
+}
