@@ -1,60 +1,43 @@
 import React from "react";
 import "./Card.css";
 import { useState } from "react";
+import jsonData from "./project-data.json";
 
 export default function Card() {
-  const skeletonCard = () => {
-    return (
-      <div className='card'>
-        <div className='shade'></div>
-      </div>
-    );
-  };
+  const [initialCards, setCards] = useState(
+    <div className='card'>
+      <div className='shade'></div>
+    </div>
+  );
 
-  const requestURL = "project-data.json";
-  const request = new XMLHttpRequest();
+    let projects = [];
 
-  request.open("GET", requestURL);
-  request.responseType = "json";
-  request.send();
-
-  request.onload = function () {
-    window.addEventListener("load", () => {
-      const Data = request.response;
-      generateCards(Data);
-    });
-  };
-
-  const [initialCards, setCards] = useState(skeletonCard);
-
-  const generateCards = (Data) => {
-    let newCards = [];
-
-    for (let i = 0; i < Data.length; i++) {
-      newCards.push(
-        <div className='card' key={Data[i].name}>
-          <h3 className='bow'>{Data[i].name}</h3>
-          <div className='textcontainer'>
-            <img
-              className='card_img'
-              src={Data[i].imgSrc}
-              alt={Data[i].name + "Logo"}
-            />
-            <p>{Data[i].description}</p>
-            <div className='card_link_cont'>
-              <a className='card_link' href={Data[i].codeLink}>
-                Código
-              </a>
-              <a className='card_link' href={Data[i].liveLink}>
-                Sitio
-              </a>
-            </div>
-          </div>
+    jsonData.forEach((e) => {
+      projects.push(<div className='card' key={e.name}>
+      <h3 className='bow'>{e.name}</h3>
+      <div className='textcontainer'>
+        <img
+          className='card_img'
+          src={e.imgSrc}
+          alt={e.name + "Logo"}
+        />
+        <p>{e.description}</p>
+        <div className='card_link_cont'>
+          <a className='card_link' href={e.codeLink}>
+            Código
+          </a>
+          <a className='card_link' href={e.liveLink}>
+            Sitio
+          </a>
         </div>
-      );
-    }
-    setCards(newCards);
-  };
+      </div>
+    </div>)
+    })
+
+    window.addEventListener('load', () => {
+      console.log(jsonData)
+      setCards(projects)
+    })
 
   return <div className='cards'>{initialCards}</div>;
 }
