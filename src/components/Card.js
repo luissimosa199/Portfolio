@@ -35,7 +35,6 @@ export default function Card() {
     })
 
     window.addEventListener('load', () => {
-      console.log(jsonData)
       setCards(projects)
     })
 
