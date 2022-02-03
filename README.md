@@ -7,7 +7,7 @@ Este es mi primer proyecto creado con React.
 - HTML
 - CSS
 - JS
-- React(JS & DOM)
+- ReactJS
 
 ## Descripción
 
