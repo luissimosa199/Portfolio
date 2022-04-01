@@ -1,6 +1,6 @@
 # Portafolio de Luis Simosa
 
-Este es mi primer proyecto creado con React.
+Acá mi portafolio, es la segunda versión que realizo con una interfaz un poco más moderna apoyado en Bootstrap.
 
 ## Herramientas utilizadas:
 
@@ -8,10 +8,12 @@ Este es mi primer proyecto creado con React.
 - CSS
 - JS
 - ReactJS
+- Bootstrap & react-bootstrap
+- Axios
 
 ## Descripción
 
-Se trata de un portafolio simple con header, footer y tres secciones, en la primera explico un poco mi recorrido en el mundo del desarrollo web y en cuales herramientas me he apoyado para aprender. En la segunda sección encontramos unas cards simples pero elegantes con una linda animación de 'twist'. Las tarjetas son generadas en base a un archivo JSON que almacena los datos de los proyectos que he realizado y que realizaré en el futuro. Por último tenemos una sección con links para conocer un poco más mi trabajo y poder contactarme.
+Se trata de un portafolio simple con header, footer y tres secciones, en la primera explico un poco quien soy y cuales son mis intereses. En la segunda sección se encuentran las tarjetas que representan los poryectos que he realizado. Estas tarjetas son generadas en base a un archivo JSON que almacena los datos de los proyectos que he realizado y que realizaré en el futuro. Por último tenemos una sección con links para conocer un poco más mi trabajo y poder contactarme.
 
 ### PD:
 - En el link de FreeCodeCamp pueden mirar los proyectos que realicé para lograr la certificación.

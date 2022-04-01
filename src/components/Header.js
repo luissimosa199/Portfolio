@@ -1,17 +1,39 @@
-import React from "react";
-import "./Header.css";
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
-export default function Header() {
-    return (
-        <header>
-            <nav>
-                <ul className="nav-links">
-                    <li className="nav-link"><a href="#sobre-mi">Sobre mi</a></li>
-                    <li className="nav-link"><a href="#proyectos">Proyectos</a></li>
-                    <li className="nav-link"><a href="#contactame">Contáctame</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
-  }
-  
+const Header = () => {
+  return (
+    <Container>
+
+      <Navbar
+        expand='sm'
+        fixed='top'
+        bg='light'
+        className='justify-content-center justify-content-sm-start'
+        >
+        <Navbar.Brand className="mx-3 h1">Luis Simosa</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse>
+
+          <Nav as='ul' className="text-center">
+            <Nav.Item as='li'>
+              <Nav.Link href="#about">Sobre Mi</Nav.Link>
+            </Nav.Item>
+            <Nav.Item as='li'>
+              <Nav.Link href="#projects">Proyectos</Nav.Link>
+            </Nav.Item>
+            <Nav.Item as='li'>
+              <Nav.Link href="#contact">Contacto</Nav.Link>
+            </Nav.Item>
+          </Nav>
+
+        </Navbar.Collapse>
+
+      </Navbar>
+
+    </Container>
+  );
+};
+
+export default Header;

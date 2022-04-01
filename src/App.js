@@ -1,19 +1,16 @@
-import React from "react";
-import Header from "./components/Header";
 import About from "./components/About";
-import ProjectsList from "./components/ProjectsList";
 import Contact from "./components/Contact";
+import Header from "./components/Header"
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className='port_container'>
+    <div className="App">
       <Header />
-      <main>
-        <About />
-        <ProjectsList />
-        <Contact />
-      </main>
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );
