@@ -1,0 +1,22 @@
+[
+  { "name": "XOCO", 
+    "description": "Emprendimiento de barras y bombones de chocolate", 
+    "imgSrc": "https://live.staticflickr.com/65535/51761621504_7254335465_o.png",
+    "codeLink": "https://github.com/luissimosa199/xocopage",
+    "liveLink": "https://luissimosa199.github.io/xocopage/" 
+  },
+  {
+    "name": "Calculadora",
+    "description": "Calculadora de comisiones de ventas Movistar",
+    "imgSrc": "https://live.staticflickr.com/65535/51761677659_ab5eb22ca0_o.png",
+    "codeLink": "https://github.com/luissimosa199/calculadora-de-comisiones",
+    "liveLink": "https://luissimosa199.github.io/calculadora-de-comisiones/"
+  },
+  {
+    "name": "AllFreeGoogleBooks",
+    "description": "Buscador de libros gratis en Google Books",
+    "imgSrc": "https://live.staticflickr.com/65535/51848952608_272df49466_m.jpg",
+    "codeLink": "https://github.com/luissimosa199/allfreegooglebooks",
+    "liveLink": "https://luissimosa199.github.io/allfreegooglebooks/"
+  }
+]
