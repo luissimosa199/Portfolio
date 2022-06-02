@@ -18,5 +18,19 @@
     "imgSrc": "https://live.staticflickr.com/65535/51848952608_272df49466_m.jpg",
     "codeLink": "https://github.com/luissimosa199/allfreegooglebooks",
     "liveLink": "https://luissimosa199.github.io/allfreegooglebooks/"
+  },
+  {
+    "name": "Prime Hotel Menu",
+    "description": "App para busqueda de recetas (Alkemy Challenge)",
+    "imgSrc": "https://live.staticflickr.com/65535/52117403183_c9d6b696dd_m.jpg",
+    "codeLink": "https://github.com/luissimosa199/prime-hotel-menu",
+    "liveLink": "https://happy-wozniak-d95c72.netlify.app/"
+  },
+  {
+    "name": "GoScrum!",
+    "description": "App de organización de trabajo (Alkemy Skill Up)",
+    "imgSrc": "https://live.staticflickr.com/65535/52117874160_bd017e83ef_m.jpg",
+    "codeLink": "https://github.com/luissimosa199/goscrum-ls",
+    "liveLink": "https://luissimosa199.github.io/goscrum-ls/"
   }
 ]
